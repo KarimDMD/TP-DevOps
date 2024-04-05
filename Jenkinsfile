@@ -6,6 +6,12 @@ pipeline {
     }
 
     stages {
+        stage('Preparation') {
+            steps {
+                echo 'Preparing...'
+            }
+        }
+
         stage('Build') {
             steps {
                 echo 'Building...'
